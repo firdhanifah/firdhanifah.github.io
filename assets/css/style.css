@@ -1942,3 +1942,21 @@ button:hover ion-icon {
   border-color: var(--light-gray);
   color: var(--white-1);
 }
+
+@media (max-width: 580px) {
+  .sidebar.active {
+    max-height: 1000px;
+  }
+
+  .sidebar-info {
+    padding: 10px;
+  }
+
+  .sidebar-info_more {
+    margin-top: 20px;
+  }
+
+  .sidebar.active .sidebar-info_more {
+    max-height: none;
+  }
+}
