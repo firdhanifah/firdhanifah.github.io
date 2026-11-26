@@ -319,7 +319,6 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
-  padding: 5px;
 }
 
 .sidebar.active { max-height: 405px; }
@@ -330,7 +329,6 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding: 10px 15px;
 }
 
 .avatar-box {
