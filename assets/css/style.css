@@ -1942,19 +1942,34 @@ button:hover ion-icon {
 }
 
 @media (max-width: 580px) {
+  .sidebar {
+    max-height: 180px;
+    overflow: hidden;
+  }
+
   .sidebar.active {
-    max-height: 1000px;
+    max-height: 600px;
   }
 
   .sidebar-info {
+    align-items: center;
     padding: 10px;
+    gap: 12px;
   }
 
-  .sidebar-info_more {
-    margin-top: 20px;
+  .avatar-box {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
   }
 
-  .sidebar.active .sidebar-info_more {
-    max-height: none;
+  .info-content {
+    min-width: 0;
+  }
+
+  .info-content .name {
+    font-size: 20px;
+    line-height: 1.4;
+    overflow-wrap: normal;
   }
 }
