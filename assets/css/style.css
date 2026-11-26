@@ -1902,3 +1902,27 @@ a:hover ion-icon,
 button:hover ion-icon {
   color: var(--white-1);
 }
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--jet);
+  border-radius: 50px;
+  color: var(--light-gray);
+  background: var(--bg-gradient-jet);
+  font-size: 13px;
+  font-weight: 400;
+  transition: var(--transition-1);
+}
+
+.skill-tag:hover {
+  border-color: var(--light-gray);
+  color: var(--white-1);
+}
