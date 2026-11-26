@@ -336,8 +336,18 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
-
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transform: scale(1.4);
+}
 .info-content .name {
   color: var(--white-2);
   font-size: 22px;
