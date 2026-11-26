@@ -1886,3 +1886,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Custom neutral icon colors */
+
+ion-icon {
+  color: var(--light-gray);
+}
+
+.icon-box ion-icon {
+  color: var(--light-gray);
+}
+
+a:hover ion-icon,
+button:hover ion-icon {
+  color: var(--white-1);
+}
