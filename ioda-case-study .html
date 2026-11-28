@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IODA Academy | Customer Data Analysis</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #bfdbfe;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    header a {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 75px 0 45px;
+    }
+
+    .tag {
+      color: #93c5fd;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.3;
+      margin: 15px 0;
+      color: #f8fafc;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      max-width: 750px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .meta span {
+      padding: 8px 14px;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+
+    section {
+      padding: 40px 0;
+      border-top: 1px solid #334155;
+    }
+
+    h2 {
+      font-size: 23px;
+      margin-bottom: 20px;
+      color: #f1f5f9;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin: 25px 0 10px;
+      color: #bfdbfe;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #cbd5e1;
+    }
+
+    ul {
+      padding-left: 22px;
+      color: #cbd5e1;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: #172238;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+
+    .placeholder {
+      background: #1e293b;
+      border: 1px dashed #64748b;
+      border-radius: 10px;
+      padding: 35px 20px;
+      text-align: center;
+      color: #94a3b8;
+      margin: 20px 0;
+    }
+
+    .placeholder small {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skills span {
+      background: #1e293b;
+      border: 1px solid #475569;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #334155;
+      border: 1px solid #64748b;
+      padding: 10px 18px;
+      border-radius: 8px;
+      margin-top: 10px;
+      color: #f1f5f9;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid #334155;
+      color: #94a3b8;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .hero {
+        padding-top: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html#portfolio">← Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="hero">
+      <div class="tag">Customer Data Analysis · Case Study</div>
+
+      <h1>IODA Academy<br>Customer Data Analyst Case Study</h1>
+
+      <p class="subtitle">
+        Analisis data leads dan penjualan untuk mengidentifikasi
+        performa produk, efektivitas sumber leads, serta pola
+        leads yang belum berhasil melakukan pembayaran.
+      </p>
+
+      <div class="meta">
+        <span>Microsoft Excel</span>
+        <span>Data Cleaning</span>
+        <span>Pivot Table</span>
+        <span>Dashboard</span>
+      </div>
+    </div>
+
+    <section>
+      <h2>01. Project Overview</h2>
+
+      <div class="card">
+        <p>
+          Studi kasus ini menggunakan dataset simulasi leads dan
+          penjualan IODA Academy periode Agustus–Oktober 2026.
+          Analisis dilakukan untuk memahami performa penjualan,
+          efektivitas sumber leads, serta alasan leads belum
+          berhasil melakukan pembayaran.
+        </p>
+
+        <p>
+          Hasil analisis diharapkan dapat membantu tim Sales dan
+          Marketing dalam mengevaluasi performa serta menentukan
+          strategi tindak lanjut yang lebih terarah.
+        </p>
+      </div>
+
+      <h3>Objectives</h3>
+
+      <ul>
+        <li>Mengevaluasi performa penjualan berdasarkan produk dan program.</li>
+        <li>Membandingkan efektivitas sumber leads berdasarkan conversion rate.</li>
+        <li>Mengidentifikasi alasan leads berstatus Unpaid dan Failed.</li>
+        <li>Menyajikan hasil analisis melalui dashboard sederhana.</li>
+        <li>Menyusun insight dan rekomendasi tindak lanjut.</li>
+      </ul>
+
+      <h3>Dataset</h3>
+
+      <p>
+        Dataset terdiri dari data leads, informasi produk/program,
+        sumber leads, status transaksi, serta nilai transaksi.
+        Setiap Lead ID mewakili satu leads.
+      </p>
+    </section>
+
+    <section>
+      <h2>02. Data Preparation</h2>
+
+      <p>
+        Tahap awal dilakukan untuk memeriksa kualitas data dan
+        memastikan dataset siap digunakan dalam analisis.
+        Pemeriksaan meliputi duplikasi, konsistensi penulisan,
+        format data, serta kelengkapan informasi.
+      </p>
+
+      <div class="placeholder">
+        Screenshot Data Cleaning
+        <small>Tambahkan screenshot proses pemeriksaan dan pengolahan data Excel di sini.</small>
+      </div>
+
+      <h3>Data Preparation Notes</h3>
+
+      <div class="card">
+        <p>
+          Dokumentasi permasalahan data, tindakan pembersihan,
+          dan asumsi yang digunakan akan ditampilkan pada bagian ini.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>03. Data Analysis</h2>
+
+      <p>
+        Analisis dilakukan menggunakan formula Excel dan Pivot Table
+        untuk menjawab pertanyaan bisnis dalam mini-case.
+      </p>
+
+      <h3>Sales Performance</h3>
+
+      <p>
+        Membandingkan revenue Paid dan jumlah transaksi Paid
+        berdasarkan produk serta program.
+      </p>
+
+      <div class="placeholder">
+        Screenshot Analisis Penjualan
+        <small>Tambahkan tabel analisis produk dan program di sini.</small>
+      </div>
+
+      <h3>Lead Source Performance</h3>
+
+      <p>
+        Membandingkan jumlah leads dan conversion rate setiap
+        sumber leads untuk mengidentifikasi sumber yang paling efektif.
+      </p>
+
+      <div class="placeholder">
+        Screenshot Analisis Sumber Leads
+        <small>Tambahkan tabel jumlah leads dan conversion rate di sini.</small>
+      </div>
+
+      <h3>Unpaid & Failed Analysis</h3>
+
+      <p>
+        Mengidentifikasi alasan paling sering ditemukan pada leads
+        yang belum berhasil melakukan pembayaran atau batal membeli.
+      </p>
+
+      <div class="placeholder">
+        Screenshot Analisis Unpaid & Failed
+        <small>Tambahkan tabel analisis alasan belum closing di sini.</small>
+      </div>
+    </section>
+
+    <section>
+      <h2>04. Dashboard</h2>
+
+      <p>
+        Dashboard merangkum indikator utama penjualan dan
+        performa leads selama periode analisis.
+      </p>
+
+      <div class="placeholder">
+        Dashboard Preview
+        <small>Tambahkan screenshot dashboard Excel kamu di sini.</small>
+      </div>
+
+      <h3>Dashboard Metrics</h3>
+
+      <ul>
+        <li>Total Leads</li>
+        <li>Jumlah Paid</li>
+        <li>Conversion Rate</li>
+        <li>Revenue Paid</li>
+        <li>Lead Source Performance</li>
+        <li>Reasons for Unpaid & Failed</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>05. Insights & Recommendations</h2>
+
+      <h3>Key Insights</h3>
+
+      <div class="card">
+        <p>
+          Insight 1 — Akan diisi berdasarkan hasil analisis data.
+        </p>
+
+        <p>
+          Insight 2 — Akan diisi berdasarkan hasil analisis data.
+        </p>
+      </div>
+
+      <h3>Recommendations</h3>
+
+      <div class="card">
+        <p>
+          Recommendation 1 — Akan disusun berdasarkan temuan analisis.
+        </p>
+
+        <p>
+          Recommendation 2 — Akan disusun berdasarkan temuan analisis.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>06. Tools & Skills</h2>
+
+      <div class="skills">
+        <span>Microsoft Excel</span>
+        <span>Data Cleaning</span>
+        <span>Data Analysis</span>
+        <span>Pivot Table</span>
+        <span>Data Visualization</span>
+        <span>Business Insights</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>07. Project File</h2>
+
+      <p>
+        Workbook Excel berisi proses pengolahan data, analisis,
+        dashboard, serta dokumentasi hasil mini-case.
+      </p>
+
+      <a href="#" class="btn">View Excel Workbook</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      Firdha Hanifah Suparlan · Data Analytics Portfolio
+    </div>
+  </footer>
+
+</body>
+</html>
