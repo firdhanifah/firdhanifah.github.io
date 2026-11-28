@@ -93,7 +93,35 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
+form.addEventListener("submit", async function (event) {
+  event.preventDefault();
 
+  formBtn.setAttribute("disabled", "");
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+      formBtn.setAttribute("disabled", "");
+    } else {
+      alert("Failed to send message. Please try again.");
+      formBtn.removeAttribute("disabled");
+    }
+  } catch (error) {
+    alert("Network error. Please try again.");
+    formBtn.removeAttribute("disabled");
+  }
+});
 
 
 // page navigation variables
