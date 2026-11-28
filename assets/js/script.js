@@ -145,3 +145,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// open requested page when returning from project
+const openPage = sessionStorage.getItem("openPage");
+
+if (openPage) {
+  sessionStorage.removeItem("openPage");
+
+  for (let i = 0; i < navigationLinks.length; i++) {
+    if (navigationLinks[i].innerHTML.toLowerCase() === openPage) {
+      navigationLinks[i].click();
+      break;
+    }
+  }
+}
