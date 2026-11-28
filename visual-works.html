@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Works</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0b1120;
+      color: #e2e8f0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 35px;
+      color: #a5b4fc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      color: white;
+    }
+
+    .eyebrow {
+      color: #94a3b8;
+      font-size: 12px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #f1f5f9;
+    }
+
+    .intro {
+      color: #94a3b8;
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      color: #e2e8f0;
+    }
+
+    .section-desc {
+      color: #94a3b8;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #263449;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #64748b;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .infographic img {
+      aspect-ratio: 3 / 4;
+      cursor: pointer;
+    }
+
+    .videographic img {
+      aspect-ratio: 16 / 9;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .card-content h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: #f1f5f9;
+    }
+
+    .card-content p {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    .video-link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .video-link img {
+      transition: 0.3s;
+    }
+
+    .video-link:hover img {
+      opacity: 0.8;
+    }
+
+    .footer {
+      border-top: 1px solid #263449;
+      padding-top: 25px;
+      margin-top: 50px;
+      color: #64748b;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* Image preview */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .modal img {
+      max-width: 95%;
+      max-height: 90vh;
+      object-fit: contain;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 25px 16px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a href="index.html#portfolio" class="back-link">
+      ← Back to Portfolio
+    </a>
+
+    <header>
+      <p class="eyebrow">POJOK STATISTIK | SELECTED WORKS</p>
+      <h1>Visual Works</h1>
+      <p class="intro">
+        A collection of infographics and videographics created
+        through statistical communication and educational activities
+        at Pojok Statistik Universitas Islam Bandung.
+      </p>
+    </header>
+
+    <!-- INFOGRAPHICS -->
+    <section class="section">
+
+      <h2>Infographics</h2>
+      <p class="section-desc">
+        Statistical information presented through visual storytelling
+        and informative graphic design.
+      </p>
+
+      <div class="gallery">
+
+        <div class="card infographic">
+          <img src="assets/images/visual-1.jpg"
+               alt="Statistical infographic 1"
+               onclick="openImage(this)">
+          <div class="card-content">
+            <h3>Infographic 01</h3>
+            <p>Statistical information and data visualization.</p>
+          </div>
+        </div>
+
+        <div class="card infographic">
+          <img src="assets/images/visual-2.jpg"
+               alt="Statistical infographic 2"
+               onclick="openImage(this)">
+          <div class="card-content">
+            <h3>Infographic 02</h3>
+            <p>Statistical information and data visualization.</p>
+          </div>
+        </div>
+
+        <div class="card infographic">
+          <img src="assets/images/visual-3.jpg"
+               alt="Statistical infographic 3"
+               onclick="openImage(this)">
+          <div class="card-content">
+            <h3>Infographic 03</h3>
+            <p>Statistical information and data visualization.</p>
+          </div>
+        </div>
+
+        <div class="card infographic">
+          <img src="assets/images/visual-4.jpg"
+               alt="Statistical infographic 4"
+               onclick="openImage(this)">
+          <div class="card-content">
+            <h3>Infographic 04</h3>
+            <p>Statistical information and data visualization.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIDEOGRAPHICS -->
+    <section class="section">
+
+      <h2>Videographics</h2>
+      <p class="section-desc">
+        Educational videos and statistical content developed
+        to communicate data and statistical knowledge.
+      </p>
+
+      <div class="gallery">
+
+        <div class="card videographic">
+          <a href="VIDEO_LINK_1" target="_blank"
+             class="video-link">
+            <img src="assets/images/video-1.jpg"
+                 alt="Videographic 1 thumbnail">
+          </a>
+          <div class="card-content">
+            <h3>Videographic 01</h3>
+            <p>Statistical education video.</p>
+          </div>
+        </div>
+
+        <div class="card videographic">
+          <a href="VIDEO_LINK_2" target="_blank"
+             class="video-link">
+            <img src="assets/images/video-2.jpg"
+                 alt="Videographic 2 thumbnail">
+          </a>
+          <div class="card-content">
+            <h3>Videographic 02</h3>
+            <p>Statistical education video.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      © 2026 Firdha Hanifah Suparlan
+    </footer>
+
+  </div>
+
+  <!-- IMAGE PREVIEW -->
+  <div class="modal" id="imageModal" onclick="closeImage()">
+    <img id="modalImage" src="" alt="Infographic preview">
+  </div>
+
+  <script>
+    function openImage(image) {
+      document.getElementById("modalImage").src = image.src;
+      document.getElementById("imageModal").classList.add("active");
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").classList.remove("active");
+    }
+  </script>
+
+</body>
+</html>
