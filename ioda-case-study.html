@@ -279,20 +279,57 @@
         format data, serta kelengkapan informasi.
       </p>
 
-      <div class="placeholder">
-        Screenshot Data Cleaning
-        <small>Tambahkan screenshot proses pemeriksaan dan pengolahan data Excel di sini.</small>
-      </div>
+      <figure style="margin: 20px 0;">
+        <img src="./assets/images/ioda-cleaning.jpeg"
+             alt="Power Query Data Preparation"
+             style="width: 100%; border-radius: 12px; border: 1px solid #ddd;">
+        <figcaption style="text-align: center; color: #6b7280; font-size: 14px; margin-top: 10px;">
+          Data preparation process using Power Query in Microsoft Excel.
+        </figcaption>
+      </figure>
 
-      <h3>Data Preparation Notes</h3>
 
-      <div class="card">
-        <p>
-          Dokumentasi permasalahan data, tindakan pembersihan,
-          dan asumsi yang digunakan akan ditampilkan pada bagian ini.
-        </p>
-      </div>
-    </section>
+<h3>Data Preparation Notes</h3>
+
+    <div class="card">
+      <ul>
+        <li>
+          <strong>Duplicate Records:</strong> Ditemukan 3 data duplikat
+          (LD-084, LD-019, dan LD-063). Data duplikat dihapus,
+          sehingga jumlah data berkurang dari 153 menjadi 150 baris.
+        </li>
+    
+        <li>
+          <strong>Lead Source Standardization:</strong>
+          Menyeragamkan penulisan kategori WhatsApp dan Website
+          pada kolom sumber leads.
+        </li>
+    
+        <li>
+          <strong>Product Standardization:</strong>
+          Menyeragamkan penulisan kategori WPB pada kolom produk.
+        </li>
+    
+        <li>
+          <strong>Status Standardization:</strong>
+          Menyeragamkan penulisan status Paid.
+        </li>
+    
+        <li>
+          <strong>Whitespace Handling:</strong>
+          Menghapus spasi berlebih pada kolom Status dan Lead Source
+          menggunakan Trim.
+        </li>
+    
+        <li>
+          <strong>Data Type Conversion:</strong>
+          Mengubah tipe data kolom Nilai Transaksi (Rp)
+          dari teks menjadi numerik agar dapat digunakan
+          dalam perhitungan analisis.
+        </li>
+      </ul>
+    </div>
+
 
     <section>
       <h2>03. Data Analysis</h2>
